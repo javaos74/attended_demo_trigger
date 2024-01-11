@@ -1,0 +1,12 @@
+{
+  "Tags": [
+    {
+      "Key": "Shinhan"
+    },
+    {
+      "Key": "언텐디드자동화"
+    }
+  ],
+  "SeparateRuntimeDependencies": true,
+  "IncludeSources": true
+}
