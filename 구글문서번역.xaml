@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="args" Type="InArgument(ui:FileChangeTriggerArgs)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1102,3206</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1200,3387</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -107,12 +107,13 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="구글문서 변역" sap:VirtualizedContainerService.HintSize="1112,3141" sap2010:WorkflowViewState.IdRef="Sequence_8">
+  <Sequence DisplayName="구글문서 변역" sap:VirtualizedContainerService.HintSize="1112,3322" sap2010:WorkflowViewState.IdRef="Sequence_8">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1050,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[Path.Combine( Environment.GetFolderPath( Environment.SpecialFolder.DesktopDirectory), &quot;번역해줘&quot;)]" />
     <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Edge: Google 번역" sap:VirtualizedContainerService.HintSize="1050,3030" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f04f4732-1ebe-46d2-a5ef-caea17416d13" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">

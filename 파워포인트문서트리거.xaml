@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1252,629</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1200,770</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>번역하기_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -111,18 +111,16 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="번역하기" sap:VirtualizedContainerService.HintSize="450,471" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="번역하기" sap:VirtualizedContainerService.HintSize="450,466" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:FileChangeTriggerV3 ChangeType="Changed" DisplayName="File Change Trigger - 파워포인트 문서" Enabled="True" FileNameFilter="*.ppt*" sap:VirtualizedContainerService.HintSize="388,206" sap2010:WorkflowViewState.IdRef="FileChangeTriggerV3_2" IncludeSubdirectories="False" NotifyFilters="FileName" Path="[Path.Combine( Environment.GetFolderPath( Environment.SpecialFolder.DesktopDirectory), &quot;번역해줘&quot;)]" SchedulingMode="Sequential" TriggerId="51c741c7-56a7-45cb-99ab-7f8c31bb0f32" />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="구글문서번역.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="구글문서번역.xaml">
+    <ui:FileChangeTriggerV3 ChangeType="Created" DisplayName="File Change Trigger - 파워포인트 문서" Enabled="True" FileNameFilter="*.ppt*" sap:VirtualizedContainerService.HintSize="388,202" sap2010:WorkflowViewState.IdRef="FileChangeTriggerV3_2" IncludeSubdirectories="False" NotifyFilters="FileName" Path="[Path.Combine( Environment.GetFolderPath( Environment.SpecialFolder.DesktopDirectory), &quot;번역해줘&quot;)]" SchedulingMode="Sequential" TriggerId="51c741c7-56a7-45cb-99ab-7f8c31bb0f32" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="구글문서번역.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="구글문서번역.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="ui:FileChangeTriggerArgs" x:Key="args">
-          <VisualBasicValue x:TypeArguments="ui:FileChangeTriggerArgs" ExpressionText="TriggerEventArgs" />
-        </InArgument>
+        <InArgument x:TypeArguments="ui:FileChangeTriggerArgs" x:Key="args">[TriggerEventArgs]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>
